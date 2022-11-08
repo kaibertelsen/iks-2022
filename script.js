@@ -1,4 +1,4 @@
-$('#resultat').val("test");
+$('#resultat').val("test dette fungerer");
 
 
 
