@@ -1,0 +1,4 @@
+$('#resultat').val("test");
+
+
+
