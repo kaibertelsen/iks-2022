@@ -40,3 +40,16 @@ if (element.style.display=="none"){
     }, 10);
     }
 }
+function deleteChild(element) {
+        //e.firstElementChild can be used.
+        var child = element.lastElementChild; 
+        while (child) {
+            element.removeChild(child);
+            child = element.lastElementChild;
+        }
+    }
+//klargjøre fade elementer
+function startinghidden(element){
+element.opacity = 0;
+element.style.display = 'none';
+}
