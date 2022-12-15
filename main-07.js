@@ -80,3 +80,23 @@ function startinghidden(element){
 element.opacity = 0;
 element.style.display = 'none';
 }
+
+function copydummyelement(node,wrapper,array1,array2,array3){
+var arrayLength = array1.length;
+	for (var i = 0; i < arrayLength; i++) {
+  const clone = node.cloneNode(true);
+	wrapper.appendChild(clone);
+	$(clone).show();
+  // sette ny id og click på switsj
+  const switsj = clone.querySelector("[dummysvitsj]");
+  switsj.setAttribute("id",array1[i]);
+  switsj.setAttribute("data-levid",array3[i]);
+  var onclick = "leverandorunselect('"+array1[i]+"')"
+  switsj.setAttribute("onclick",onclick);
+  switsj.setAttribute("name", array2[i]);
+  switsj.setAttribute("value", "webflowid");
+  switsj.setAttribute("title", "airtableid");
+  const leverandornavn = clone.querySelector("[dummylevarandornavn]");
+  leverandornavn.innerHTML = array2[i];
+}
+}
