@@ -1,3 +1,19 @@
+function companyrights (array,cid){
+	//tester innkommende bruker om den har rett å se dette selskapet
+var index = array.indexOf(cid);
+if(index > -1){  
+  var value = array[index];
+  if (value.lenght == cid.lenght ){
+  return (true);
+  }else{
+return (false);
+  }
+}else{  
+    return (false);       
+}  
+}
+
+
 function isdateoff(inndato,daysoff){
 // innkommende dato cms
 var splitdato = inndato.split('/');
