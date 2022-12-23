@@ -41,7 +41,7 @@ return true;
 }
 }
 
-function setselector(val,elementid){
+function setselector(elementid,val){
 //brukes for å sette standard verdier
 // val = value to be set in the selector
 const sel = document.getElementById(elementid);
