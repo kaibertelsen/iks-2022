@@ -1,5 +1,5 @@
 function companyrights (array,cid){
-	//tester innkommende bruker om den har rett å se dette selskapet
+//tester innkommende bruker om den har rett å se dette selskapet
 var index = array.indexOf(cid);
 if(index > -1){  
   var value = array[index];
@@ -12,53 +12,6 @@ return (false);
     return (false);       
 }  
 }
-
-function arrayautosave(fieldname,array){
-if(!autosavefield.includes(fieldname)){
-	//om den ikke inneholder det tidligere
-	autosavefield.push(fieldname);
-	autosavevalue.push(array);
-	}else{
-	//oppdatere value i riktig index
-	var index = autosavefield.indexOf(fieldname);
-	autosavevalue[index] = array;
-	}
-  startcounter();
-}
-
-function boxselect(elementid){
-const element = document.getElementById(elementid);
-	if (element.parentElement.parentElement.classList.contains("autosave")){
-     let value = "false";
-     
-		 if (element.checked ==true){
-		 value = "true";
-     }
-     
-		 	if(!autosavefield.includes(element.name)){
-      //om den ikke inneholder det tidligere
-			autosavevalue.push(value);
-			autosavefield.push(element.name);
-		  }else{
-      //oppdatere value i riktig index
-			var index = autosavefield.indexOf(element.name);
-			autosavevalue[index] = value;
-      }
-      
-		startcounter();
-  	}
-  
-}
-
-function startcounter(){
-//starte counter 
-    clearTimeout(typingTimer);
-    if (autosavefield.length>0){
-    typingTimer = setTimeout(counterdone, doneTypingInterval);
-    }
-    console.log(autosavefield,autosavevalue);
-  }
-
 
 function isdateoff(inndato,daysoff){
 // innkommende dato cms
