@@ -7,8 +7,8 @@
     var omsetning= input.value;
     //Omsetning
 	  
-   document.getElementById("prosentvarekostnad").innerHTML = 30%;
-   document.getElementById("prosentvarekostnad-2").value = 30%;
+   document.getElementById("prosentvarekostnad").innerHTML = "30%";
+   document.getElementById("prosentvarekostnad-2").value = "30%";
 	  
    let varekostnad = omsetning*prosentvarekostnad;
        varekostnad = round(varekostnad, 0);
