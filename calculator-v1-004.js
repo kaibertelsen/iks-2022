@@ -19,7 +19,7 @@
    
     //Besparelse
       let besparelse = varekostnad*snittbasparelse;
-      let besparelse = besparelse.toLocaleString('en-US');
+       besparelse = besparelse.toLocaleString('en-US');
        besparelse=besparelse.replace(",", " ");
    document.getElementById("besparelse").innerHTML = besparelse+",-";
    document.getElementById("besparelse-2").value = besparelse+",-";
