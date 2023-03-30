@@ -1,7 +1,7 @@
 
   input.oninput = function() {
 	  
-	  let omsetningcurent = input.value*1000;
+	  let omsetningcurent = input.value*1000000;
   document.getElementById("omsetning").value = omsetningcurent;
   document.getElementById("valuedisplay").innerHTML = input.value;
 	  
@@ -16,6 +16,7 @@
        varekostnad = round(varekostnad, 0);
        varekostnad = varekostnad.toLocaleString('en-US');
        varekostnad=varekostnad.replace(",", " ");
+       varekostnad=varekostnad.replace(",", " ");
    document.getElementById("varekostnad").innerHTML = varekostnad;
    document.getElementById("varekostnad-2").value = varekostnad;
    
@@ -23,6 +24,7 @@
       let besparelse = varekostnad*snittbasparelse;
        besparelse = besparelse.toLocaleString('en-US');
        besparelse=besparelse.replace(",", " ");
+      besparelse=besparelse.replace(",", " ");
    document.getElementById("besparelse").innerHTML = besparelse+",-";
    document.getElementById("besparelse-2").value = besparelse+",-";
 	  
