@@ -1,7 +1,7 @@
 
   input.oninput = function() {
 	  
-	  let omsetningcurent = input.value*1000000;
+	  let omsetningcurent = input.value*1000;
   document.getElementById("omsetning").value = omsetningcurent;
   document.getElementById("valuedisplay").innerHTML = input.value;
 	  
