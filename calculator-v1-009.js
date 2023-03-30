@@ -18,8 +18,8 @@
        varekostnad = varekostnad.toLocaleString('en-US');
        varekostnad=varekostnad.replace(",", " ");
        varekostnad=varekostnad.replace(",", " ");
-   document.getElementById("varekostnad").innerHTML = varekostnad;
-   document.getElementById("varekostnad-2").value = varekostnad;
+   document.getElementById("varekostnad").innerHTML = varekostnad+",-";
+   document.getElementById("varekostnad-2").value = varekostnad+",-";
    
     //Besparelse
       let besparelse = varekostnadnumber*snittbasparelse;
