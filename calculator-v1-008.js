@@ -12,7 +12,8 @@
    document.getElementById("prosentvarekostnad").innerHTML = "30%";
    document.getElementById("prosentvarekostnad-2").value = "30%";
 	  
-   let varekostnad = omsetning*prosentvarekostnad;
+   let varekostnadnumber = omsetning*prosentvarekostnad;
+	let varekostnad = varekostnadnumber;  
        varekostnad = round(varekostnad, 0);
        varekostnad = varekostnad.toLocaleString('en-US');
        varekostnad=varekostnad.replace(",", " ");
@@ -21,7 +22,7 @@
    document.getElementById("varekostnad-2").value = varekostnad;
    
     //Besparelse
-      let besparelse = varekostnad*snittbasparelse;
+      let besparelse = varekostnadnumber*snittbasparelse;
        besparelse = besparelse.toLocaleString('en-US');
        besparelse=besparelse.replace(",", " ");
       besparelse=besparelse.replace(",", " ");
