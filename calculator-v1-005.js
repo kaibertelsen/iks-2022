@@ -1,10 +1,12 @@
 
   input.oninput = function() {
-  document.getElementById("omsetning").value = input.value;
+	  
+	  let omsetningcurent = input.value*1000000;
+  document.getElementById("omsetning").value = omsetningcurent;
   document.getElementById("valuedisplay").innerHTML = input.value;
 	  
 
-    var omsetning= input.value;
+    var omsetning= omsetningcurent;
     //Omsetning
 	  
    document.getElementById("prosentvarekostnad").innerHTML = "30%";
