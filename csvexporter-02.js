@@ -39,7 +39,7 @@ return contentlistarray;
 function inforawarray(rowelement,cant,ccname){
   var rawarray = [];
   //finne verdiene i kollonnen
-    for (var i=0;i<cant.length;i++){
+    for (var i=0;i<cant;i++){
         let classname = ccname+i;
         let value = rowelement.getElementsByClassName(classname)[0].innerHTML;
         rawarray.push(value);
