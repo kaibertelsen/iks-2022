@@ -41,7 +41,14 @@ function inforawarray(rowelement,cant,ccname){
   //finne verdiene i kollonnen
     for (var i=0;i<cant;i++){
         let classname = ccname+i;
-        let value = rowelement.getElementsByClassName(classname)[0].innerHTML;
+        var valuearray = rowelement.getElementsByClassName(classname);
+	   let value = ""; 
+	    for (var a = 0;a<valuearray.length;a++){
+		value = value+valuearray[a].innerHTML;
+		    if (a<valuearray.length){
+			value = value+" , ";
+		    }
+	    	} 
         rawarray.push(value);
     }
   return rawarray;
