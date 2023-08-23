@@ -50,7 +50,7 @@ function inforawarray(rowelement,cant,ccname){
 			    if(a==valuearray.length-1){
 			    //den siste
 			    }else{
-			    value = value+" : ";
+			    value = value+";";
 			    }
 		    }
 	    	} 
