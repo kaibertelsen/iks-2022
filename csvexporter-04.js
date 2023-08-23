@@ -45,9 +45,6 @@ function inforawarray(rowelement,cant,ccname){
 	   let value = ""; 
 	    for (var a = 0;a<valuearray.length;a++){
 		value = value+valuearray[a].innerHTML;
-		    if (a<valuearray.length){
-			value = value+" , ";
-		    }
 	    	} 
         rawarray.push(value);
     }
