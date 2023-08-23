@@ -47,9 +47,11 @@ function inforawarray(rowelement,cant,ccname){
 		value = value+valuearray[a].innerHTML;
 		    if (valuearray.length>1){
 			//da er det en array
-			    if(!a==valuearray.length-1)
-			    //ikke den siste
+			    if(a==valuearray.length-1){
+			    //den siste
+			    }else{
 			    value = value+" : ";
+			    }
 		    }
 	    	} 
         rawarray.push(value);
