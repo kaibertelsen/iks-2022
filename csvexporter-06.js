@@ -47,7 +47,7 @@ function inforawarray(rowelement,cant,ccname){
 		value = value+valuearray[a].innerHTML;
 		    if (valuearray.length>1){
 			//da er det en array
-			    if(!a==0valuearray.length-1)
+			    if(!a==valuearray.length-1)
 			    //ikke den siste
 			    value = value+" : ";
 		    }
